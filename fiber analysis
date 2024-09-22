@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber Analysis in Forensic Science - Topics 1 & 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: #004d99;
+        }
+        h1 {
+            text-align: center;
+        }
+        .topic, .quiz, .certificate {
+            display: none;
+        }
+        .quiz label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .quiz button {
+            margin-top: 10px;
+            background-color: #009688;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .quiz button:hover {
+            background-color: #00796b;
+        }
+        .certificate {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #004d99;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .btn-submit {
+            background-color: #00796b;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-submit:hover {
+            background-color: #004d99;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #004d99;
+            color: #ffffff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Fiber Analysis in Forensic Science</h1>
+    <p>Welcome to the interactive lesson on Fiber Analysis in Forensic Science. Complete each section, answer the quizzes correctly, and you'll earn a certificate of completion at the end.</p>
+
+    <!-- Topic 1: Introduction -->
+    <div id="topic1" class="topic">
+        <h2>Topic 1: Introduction to Fiber Analysis</h2>
+        <p>
+            Fiber analysis is a critical aspect of forensic science, playing a key role in linking individuals to crime scenes and establishing connections between suspects, victims, and criminal activities. This lesson provides an overview of the types of fibers, the role they play in forensic investigations, and the factors that contribute to their transfer and detection. Understanding the properties of different fiber classes helps forensic scientists assess evidence and determine the relevance of fibers in solving crimes.
+        </p>
+        <p><strong>What is Fiber?</strong><br>
+            A fiber is the smallest unit of a textile material, which makes up yarns that are then spun, twisted, or woven together to form fabrics. The characteristics of the fibers, the method of spinning, and the construction of the fabric affect how fibers are transferred during contact and their relevance in criminal investigations.
+        </p>
+        <p><strong>Role in Criminal Investigations:</strong><br>
+            In forensic science, fibers can serve as physical evidence that links a suspect to a crime scene. For instance, fibers found at a crime scene or on a victim can be matched to fibers from a suspect's clothing. This evidence can establish a direct or indirect connection between the suspect and the crime.
+        </p>
+        <p><strong>Transfer of Fibers:</strong><br>
+            Fibers can transfer from one individual to another or from one object to another during contact. These fibers, once transferred, can become crucial evidence that links a suspect to a crime scene or a victim.
+        </p>
+        <p><strong>Value of Fiber Evidence:</strong><br>
+            The value of fiber evidence depends on factors like the fiber’s color, type, the number of fibers found, and their location on the victim or at the crime scene. The more specific and unique the fiber, the stronger the connection between the crime scene and the suspect.
+        </p>
+        <p><strong>Factors Affecting Fiber Transfer and Detection:</strong></p>
+        <ul>
+            <li><strong>Fabric Type:</strong> Different types of fabric have varying abilities to transfer and retain fibers. For example, loosely woven fabrics tend to shed fibers more easily than tightly woven fabrics.</li>
+            <li><strong>Nature of Contact:</strong> The type and duration of contact between a suspect and a victim or a suspect and an object also affect fiber transfer. Prolonged or violent contact is more likely to result in significant fiber transfer.</li>
+            <li><strong>Persistence of Fibers:</strong> After fibers are transferred, their ability to remain detectable depends on various factors, including the type of fabric involved, the environment, and the activities that occurred after the transfer.</li>
+        </ul>
+        <button onclick="showQuiz(1)">Take the quiz for Topic 1</button>
+    </div>
+
+    <!-- Quiz 1 -->
+    <div id="quiz1" class="quiz">
+        <h3>Quiz for Topic 1</h3>
+        <form id="form1">
+            <label>1. What is a fiber?</label>
+            <label><input type="radio" name="q1" value="correct"> A) The smallest unit of a textile material</label>
+            <label><input type="radio" name="q1" value="wrong"> B) A synthetic material used in clothing</label>
+
+            <label>2. What affects how fibers transfer during contact?</label>
+            <label><input type="radio" name="q2" value="correct"> A) The method of spinning and construction of the fabric</label>
+            <label><input type="radio" name="q2" value="wrong"> B) The weight of the fabric</label>
+
+            <label>3. What increases the significance of fiber evidence?</label>
+            <label><input type="radio" name="q3" value="correct"> A) The uniqueness and rarity of the fiber</label>
+            <label><input type="radio" name="q3" value="wrong"> B) The fiber’s color alone</label>
+        </form>
+        <button onclick="checkQuiz(1, 2)">Submit Quiz</button>
+    </div>
+
+    <!-- Topic 2: Animal Fibers -->
+    <div id="topic2" class="topic">
+        <h2>Topic 2: Animal Fibers</h2>
+        <p>
+            Animal fibers are protein-based and are typically derived from the hair or fur of animals. Common animal fibers include:
+        </p>
+        <ul>
+            <li><strong>Angora:</strong> Derived from Angora goats and rabbits, these fibers are soft, fine, and lightweight. They are often used in winter clothing because they are seven times warmer than regular wool.</li>
+            <li><strong>Camel Family (Alpaca, Llama, Camel, Vicuña):</strong> These fibers are lightweight, lustrous, and warm. Vicuña fibers are known for being the finest animal fibers in the world, making them rare and valuable.</li>
+            <li><strong>Cashmere:</strong> Cashmere fibers, sourced from Kashmir goats, are soft and lightweight. They are commonly used in luxurious garments.</li>
+            <li><strong>Wool:</strong> Wool is one of the most common animal fibers, derived from sheep. Wool has unique insulating properties, making it ideal for clothing in cold climates. In forensic investigations, wool can be identified by its surface structure, which contains scales, making it easy to differentiate under microscopic analysis.</li>
+            <li><strong>Mohair:</strong> Derived from Angora goats, mohair fibers are durable, resilient, and lightweight. They are used in a variety of fashion and home décor items.</li>
+            <li><strong>Silk:</strong> Produced by silkworms, silk fibers are renowned for their strength, shine, and smooth texture. In forensic science, silk fibers are unique due to their distinct molecular structure and high tensile strength, aiding in differentiation from other fiber types.</li>
+        </ul>
+        <p><strong>Special Type:</strong></p>
+        <p>
+            <strong>Marine Animal Fibers:</strong> Derived from fish or marine mammals, these fibers possess distinct properties compared to terrestrial animal fibers. They may exhibit unique surface textures and resilience due to their aquatic origins, presenting specialized forensic considerations.
+        </p>
+        <button onclick="showQuiz(2)">Take the quiz for Topic 2</button>
+    </div>
+
+    <!-- Quiz 2 -->
+    <div id="quiz2" class="quiz">
+        <h3>Quiz for Topic 2</h3>
+        <form id="form2">
+            <label>1. What fiber is derived from Angora goats?</label>
+            <label><input type="radio" name="q1" value="correct"> A) Mohair</label>
+            <label><input type="radio" name="q1" value="wrong"> B) Wool</label>
+
+            <label>2. Which fiber is known for being the finest animal fiber in the world?</label>
+            <label><input type="radio" name="q2" value="correct"> A) Vicuña</label>
+            <label><input type="radio" name="q2" value="wrong"> B) Silk</label>
+
+            <label>3. Which animal fiber has scales that can be easily identified under a microscope?</label>
+            <label><input type="radio" name="q3" value="correct"> A) Wool</label>
+            <label><input type="radio" name="q3" value="wrong"> B) Silk</label>
+        </form>
+        <button onclick="checkQuiz(2, 2)">Submit Quiz</button>
+    </div>
+
+    <!-- Topic 3: Plant-Based Fibers -->
+    <div id="topic3" class="topic">
+        <h2>Topic 3: Plant-Based Fibers (Cellulosic Fibers)</h2>
+        <p>
+            Plant-based fibers are primarily made of cellulose, a complex carbohydrate found in plant cell walls. These fibers are used in various applications, from clothing to industrial products. Examples include:
+        </p>
+        <ul>
+            <li><strong>Abacá:</strong> Known for its strength and durability, abacá fibers come from the stalks of the abacá plant and are used in products like ropes and specialty papers.</li>
+            <li><strong>Coir:</strong> Extracted from the husks of coconuts, coir fibers are strong and resistant to moisture, making them suitable for products like doormats and mattresses.</li>
+            <li><strong>Cotton:</strong> A highly absorbent and versatile fiber derived from the cotton plant, cotton is used in a wide range of textile products, including clothing, towels, and bed sheets.</li>
+            <li><strong>Flax:</strong> Flax fibers are used to make linen, which is lightweight and absorbent. Flax fibers are strong and are primarily used in textile production.</li>
+            <li><strong>Jute:</strong> Jute fibers are strong and durable, commonly used in the production of sacks, bags, and ropes.</li>
+            <li><strong>Kapok:</strong> Kapok fibers are lightweight and buoyant, making them ideal for use in pillows and life jackets.</li>
+            <li><strong>Kenaf:</strong> Derived from the kenaf plant, these fibers are used in paper production and other industrial applications.</li>
+            <li><strong>Raffia:</strong> Raffia fibers are pliable and come from the leaves of the raffia palm. They are often used in the production of hats, baskets, and handicrafts.</li>
+            <li><strong>Bamboo:</strong> Lightweight and flexible, bamboo fibers are used in textiles such as clothing and towels.</li>
+            <li><strong>Hemp:</strong> Known for its strength and durability, hemp fibers are used in textiles, ropes, and paper products.</li>
+            <li><strong>Modal:</strong> Made from beech trees, modal fibers are soft, lightweight, and often used in textiles like clothing and bedding.</li>
+            <li><strong>Piña:</strong> Extracted from pineapple leaves, piña fibers are used in traditional Filipino textile production to create intricate fabrics.</li>
+            <li><strong>Ramie:</strong> Ramie fibers, which come from the stems of the ramie plant, are strong and durable, commonly used in textiles and industrial materials.</li>
+            <li><strong>Sisal:</strong> Recognized for its strength, sisal is often used to make ropes, carpets, and twine.</li>
+            <li><strong>Soy Protein:</strong> These fibers are produced from tofu-manufacturing waste and are used as sustainable alternatives in textiles.</li>
+            <li><strong>Seed Fibers:</strong> Including cotton and kapok, seed fibers have specific forensic relevance due to their distinct physical characteristics, such as fiber shape, surface texture, and tensile strength.</li>
+            <li><strong>Hemp-Cotton Blends:</strong> Combining the durability of hemp with the softness of cotton, these blends are increasingly used in eco-friendly textiles, providing unique forensic identification markers.</li>
+        </ul>
+        <button onclick="showQuiz(3)">Take the quiz for Topic 3</button>
+    </div>
+
+    <!-- Quiz 3 -->
+    <div id="quiz3" class="quiz">
+        <h3>Quiz for Topic 3</h3>
+        <form id="form3">
+            <label>1. What fiber is extracted from the husks of coconuts?</label>
+            <label><input type="radio" name="q1" value="correct"> A) Coir</label>
+            <label><input type="radio" name="q1" value="wrong"> B) Bamboo</label>
+
+            <label>2. Which fiber is highly absorbent and versatile?</label>
+            <label><input type="radio" name="q2" value="correct"> A) Cotton</label>
+            <label><input type="radio" name="q2" value="wrong"> B) Hemp</label>
+
+            <label>3. Which fiber is derived from pineapple leaves?</label>
+            <label><input type="radio" name="q3" value="correct"> A) Piña</label>
+            <label><input type="radio" name="q3" value="wrong"> B) Kapok</label>
+        </form>
+        <button onclick="checkQuiz(3, 2)">Submit Quiz</button>
+    </div>
+
+    <!-- Topic 4: Mineral-Based Fibers -->
+    <div id="topic4" class="topic">
+        <h2>Topic 4: Mineral-Based Fibers</h2>
+        <p>
+            Mineral-based fibers are derived from inorganic sources, such as minerals and metals. These fibers are less common in everyday textiles but are significant in specific industrial and specialized applications.
+        </p>
+        <ul>
+            <li><strong>Asbestos:</strong> Known for its fire-resistant properties, asbestos was commonly used in heat-resistant applications before its health risks were recognized.</li>
+            <li><strong>Fiberglass:</strong> Made from a combination of silicate minerals, fiberglass is used for its fire-resistant properties and is often found in insulation materials.</li>
+            <li><strong>Metallic Fibers:</strong> These fibers can be made from metals such as gold, silver, copper, and aluminum or coated with metal. They are used for their conductivity and decorative qualities in textiles.</li>
+        </ul>
+        <p><strong>Additional Types:</strong></p>
+        <ul>
+            <li><strong>Titanium Fibers:</strong> Utilized in high-strength applications, titanium fibers are noted for their corrosion resistance and lightweight properties.</li>
+            <li><strong>Nickel Fibers:</strong> Employed in specialized industrial textiles, nickel fibers offer excellent tensile strength and thermal stability.</li>
+        </ul>
+        <button onclick="showQuiz(4)">Take the quiz for Topic 4</button>
+    </div>
+
+    <!-- Quiz 4 -->
+    <div id="quiz4" class="quiz">
+        <h3>Quiz for Topic 4</h3>
+        <form id="form4">
+            <label>1. What mineral-based fiber is known for its fire-resistant properties?</label>
+            <label><input type="radio" name="q1" value="correct"> A) Asbestos</label>
+            <label><input type="radio" name="q1" value="wrong"> B) Wool</label>
+
+            <label>2. What is fiberglass primarily used for?</label>
+            <label><input type="radio" name="q2" value="correct"> A) Insulation</label>
+            <label><input type="radio" name="q2" value="wrong"> B) Clothing</label>
+
+            <label>3. Which of the following fibers can be made from metals such as gold, silver, and copper?</label>
+            <label><input type="radio" name="q3" value="correct"> A) Metallic Fibers</label>
+            <label><input type="radio" name="q3" value="wrong"> B) Asbestos</label>
+        </form>
+        <button onclick="checkQuiz(4, 2)">Submit Quiz</button>
+    </div>
+
+    <!-- Topic 5: Synthetic Fibers -->
+    <div id="topic5" class="topic">
+        <h2>Topic 5: Synthetic Fibers</h2>
+        <p>
+            Synthetic fibers are man-made and are produced through chemical processes. They are widely used in modern textiles due to their durability and unique properties. Examples include:
+        </p>
+        <ul>
+            <li><strong>Rayon (Viscose):</strong> A semi-synthetic fiber made from regenerated cellulose, rayon is highly absorbent and has a lustrous appearance.</li>
+            <li><strong>Acetate:</strong> Another semi-synthetic fiber derived from cellulose, acetate is often used in clothing and upholstery due to its pliability and sheen.</li>
+            <li><strong>Tencel:</strong> A lightweight fiber made from wood pulp, Tencel is highly breathable and comfortable to wear.</li>
+            <li><strong>Polyester:</strong> A synthetic fiber made from polyethylene terephthalate, polyester is known for its wrinkle-resistant properties and ease of care.</li>
+            <li><strong>Aramid:</strong> Aramid fibers are heat-resistant and strong, often used in bulletproof vests and aerospace materials.</li>
+            <li><strong>Acrylic:</strong> Made from acrylonitrile, acrylic fibers mimic the properties of wool and are used in knitwear and faux fur products.</li>
+            <li><strong>Ingeo:</strong> Derived from polylactide, Ingeo fibers wick away moisture and are often used in activewear.</li>
+            <li><strong>Luminex:</strong> Luminex fibers emit light and are used in telecommunications and medical devices.</li>
+            <li><strong>Lurex:</strong> A blend of polyamide and polyester, Lurex fibers have a metallic appearance and are used in decorative fabrics.</li>
+            <li><strong>Lyocell:</strong> Known for its strength and softness, lyocell is a biodegradable cellulose fiber used in textiles like clothing and towels.</li>
+            <li><strong>Nylon:</strong> A strong and durable polyamide fiber, nylon is used in a variety of products, from clothing to industrial materials.</li>
+            <li><strong>Spandex (Lycra):</strong> A highly elastic fiber made from polyurethane, spandex is used in sportswear and swimwear.</li>
+            <li><strong>Olefin:</strong> Made from polyethylene or polypropylene, olefin fibers are lightweight and resistant to moisture, making them ideal for outdoor apparel.</li>
+            <li><strong>PLA Fiber (Polylactide):</strong> Lightweight and resistant to UV light, PLA fibers are used in sportswear and outdoor fabrics.</li>
+            <li><strong>Polypropylene:</strong> Often referred to as olefin, polypropylene is used in a variety of applications including thermal underwear, carpets, and industrial fabrics.</li>
+            <li><strong>PBT (Polybutylene Terephthalate):</strong> Similar to polyester, PBT fibers are used in sportswear and automotive textiles due to their high resilience and resistance to chemicals.</li>
+            <li><strong>Polyurethane Fibers:</strong> Used in applications requiring elasticity, these fibers are integral to stretchable garments and medical textiles.</li>
+        </ul>
+        <p><strong>Blended Fibers:</strong></p>
+        <ul>
+            <li><strong>Polyester-Cotton Blends (Poly-Cotton):</strong> Combining the durability of polyester with the comfort of cotton, these blends are common in various textiles and can present unique forensic challenges.</li>
+            <li><strong>Wool-Synthetic Blends:</strong> Often used in outerwear, these blends exhibit characteristics of both wool and synthetic fibers, aiding in more precise fiber identification.</li>
+        </ul>
+        <p><strong>High-Performance Synthetics:</strong></p>
+        <ul>
+            <li><strong>Kevlar:</strong> A type of aramid fiber used in protective gear, Kevlar has specialized forensic applications due to its high strength and heat resistance.</li>
+        </ul>
+        <p><strong>Biodegradable and Eco-Friendly Fibers:</strong></p>
+        <ul>
+            <li><strong>Biosynthetic Fibers:</strong> Such as those derived from algae or other sustainable sources, these fibers are gaining popularity and may present emerging forensic considerations.</li>
+        </ul>
+        <button onclick="showQuiz(5)">Take the quiz for Topic 5</button>
+    </div>
+
+    <!-- Quiz 5 -->
+    <div id="quiz5" class="quiz">
+        <h3>Quiz for Topic 5</h3>
+        <form id="form5">
+            <label>1. What synthetic fiber is known for its wrinkle-resistant properties?</label>
+            <label><input type="radio" name="q1" value="correct"> A) Polyester</label>
+            <label><input type="radio" name="q1" value="wrong"> B) Wool</label>
+
+            <label>2. Which fiber is highly elastic and often used in sportswear?</label>
+            <label><input type="radio" name="q2" value="correct"> A) Spandex</label>
+            <label><input type="radio" name="q2" value="wrong"> B) Nylon</label>
+
+            <label>3. Kevlar is a type of which fiber?</label>
+            <label><input type="radio" name="q3" value="correct"> A) Aramid</label>
+            <label><input type="radio" name="q3" value="wrong"> B) Acrylic</label>
+        </form>
+        <button onclick="checkQuiz(5, 2)">Submit Quiz</button>
+    </div>
+
+<script>
+    // Extend the existing showQuiz and checkQuiz functionality
+</script>
+
+    <!-- Certificate of Completion -->
+    <div id="certificate" class="certificate">
+        <h2>Congratulations!</h2>
+        <p>You have successfully completed the Fiber Analysis in Forensic Science lessons for Topics 1 and 2.</p>
+        <input type="text" id="studentName" placeholder="Enter your name for the certificate">
+        <button class="btn-submit" onclick="generateCertificate()">Generate Certificate</button>
+        <div id="certificateDetails"></div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Fiber Analysis in Forensic Science. All rights reserved.
+</footer>
+
+<script>
+    // Show the first topic
+    document.getElementById('topic1').style.display = 'block';
+
+    // Show quiz
+    function showQuiz(topicNumber) {
+        document.getElementById('quiz' + topicNumber).style.display = 'block';
+    }
+
+    // Check quiz and proceed to next topic if correct
+    function checkQuiz(topicNumber, requiredCorrectAnswers) {
+        var form = document.getElementById('form' + topicNumber);
+        var answers = form.querySelectorAll('input[type="radio"]:checked');
+        var correctAnswers = 0;
+
+        answers.forEach(function(answer) {
+            if (answer.value === 'correct') {
+                correctAnswers++;
+            }
+        });
+
+        if (correctAnswers >= requiredCorrectAnswers) {
+            alert('You passed the quiz! Proceeding to the next topic.');
+            form.reset();
+            document.getElementById('quiz' + topicNumber).style.display = 'none';
+            var nextTopic = document.getElementById('topic' + (topicNumber + 1));
+            if (nextTopic) {
+                nextTopic.style.display = 'block';
+            } else {
+                document.getElementById('certificate').style.display = 'block';
+            }
+        } else {
+            alert('You need to answer at least ' + requiredCorrectAnswers + ' questions correctly. Try again.');
+        }
+    }
+
+    // Generate certificate
+    function generateCertificate() {
+        var name = document.getElementById('studentName').value;
+        if (name) {
+            document.getElementById('certificateDetails').innerHTML = '<h3>Certificate of Completion</h3>' +
+                '<p>This certifies that <strong>' + name + '</strong> has successfully completed the Fiber Analysis in Forensic Science lesson for Topics 1 and 2.</p>' +
+                '<p>Grade: 100%</p>';
+        } else {
+            alert('Please enter your name to generate the certificate.');
+        }
+    }
+</script>
+
+<script>
+    // Initialize quiz progress tracking
+    let quizResults = {
+        quiz1: false,
+        quiz2: false,
+        quiz3: false,
+        quiz4: false,
+        quiz5: false,
+    };
+
+    // Show quiz
+    function showQuiz(topicNumber) {
+        document.getElementById('quiz' + topicNumber).style.display = 'block';
+    }
+
+    // Check quiz answers and proceed to the next topic if passed
+    function checkQuiz(quizNumber, requiredCorrectAnswers) {
+        var form = document.getElementById('form' + quizNumber);
+        var answers = form.querySelectorAll('input[type="radio"]:checked');
+        var correctAnswers = 0;
+
+        // Check how many answers are correct
+        answers.forEach(function(answer) {
+            if (answer.value === 'correct') {
+                correctAnswers++;
+            }
+        });
+
+        // Validate if the student has passed the quiz
+        if (correctAnswers >= requiredCorrectAnswers) {
+            alert('You passed Quiz ' + quizNumber + '! Proceeding to the next topic.');
+            quizResults['quiz' + quizNumber] = true;  // Mark the quiz as passed
+            form.reset();
+            document.getElementById('quiz' + quizNumber).style.display = 'none'; // Hide the quiz
+            var nextTopic = document.getElementById('topic' + (quizNumber + 1)); // Show the next topic
+            if (nextTopic) {
+                nextTopic.style.display = 'block';
+            } else {
+                // Check if all quizzes are passed before showing the certificate section
+                if (checkAllQuizzesPassed()) {
+                    document.getElementById('certificate').style.display = 'block';
+                }
+            }
+        } else {
+            alert('You need to answer at least ' + requiredCorrectAnswers + ' questions correctly. Try again.');
+        }
+    }
+
+    // Function to check if all quizzes have been passed
+    function checkAllQuizzesPassed() {
+        return quizResults.quiz1 && quizResults.quiz2 && quizResults.quiz3 && quizResults.quiz4 && quizResults.quiz5;
+    }
+
+    // Generate certificate only if all quizzes are passed
+    function generateCertificate() {
+        if (checkAllQuizzesPassed()) {
+            var name = document.getElementById('studentName').value;
+            if (name) {
+                document.getElementById('certificateDetails').innerHTML = '<h3>Certificate of Completion</h3>' +
+                    '<p>This certifies that <strong>' + name + '</strong> has successfully completed the Fiber Analysis in Forensic Science lessons.</p>' +
+                    '<p>Grade: 100%</p>';
+            } else {
+                alert('Please enter your name to generate the certificate.');
+            }
+        } else {
+            alert('You must pass all quizzes before generating the certificate.');
+        }
+    }
+</script>
+
+</body>
+</html>
